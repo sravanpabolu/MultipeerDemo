@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISwitch *visibilitySwitch;
+
+- (IBAction)visibilitySwitchStatusChanged:(id)sender;
+- (IBAction)connectBtnTapped:(id)sender;
+- (IBAction)disconnectBtnTapped:(id)sender;
+- (IBAction)searchBtnTapped:(id)sender;
 
 @end
 

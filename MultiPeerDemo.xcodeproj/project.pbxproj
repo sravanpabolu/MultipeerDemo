@@ -14,6 +14,9 @@
 		A0E0AECE1CAC424800DCE95F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E0AECD1CAC424800DCE95F /* Assets.xcassets */; };
 		A0E0AED11CAC424800DCE95F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E0AECF1CAC424800DCE95F /* LaunchScreen.storyboard */; };
 		A0E0AEDC1CAC424800DCE95F /* MultiPeerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E0AEDB1CAC424800DCE95F /* MultiPeerDemoTests.m */; };
+		A0E0AEE81CAC479500DCE95F /* MPCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E0AEE71CAC479500DCE95F /* MPCHandler.m */; };
+		A0E0AEE91CAC479500DCE95F /* MPCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E0AEE71CAC479500DCE95F /* MPCHandler.m */; };
+		A0E0AEEA1CAC55FC00DCE95F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E0AEC81CAC424800DCE95F /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,8 @@
 		A0E0AED71CAC424800DCE95F /* MultiPeerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiPeerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E0AEDB1CAC424800DCE95F /* MultiPeerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiPeerDemoTests.m; sourceTree = "<group>"; };
 		A0E0AEDD1CAC424800DCE95F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E0AEE61CAC479500DCE95F /* MPCHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCHandler.h; sourceTree = "<group>"; };
+		A0E0AEE71CAC479500DCE95F /* MPCHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,8 @@
 				A0E0AEC51CAC424800DCE95F /* AppDelegate.m */,
 				A0E0AEC71CAC424800DCE95F /* ViewController.h */,
 				A0E0AEC81CAC424800DCE95F /* ViewController.m */,
+				A0E0AEE61CAC479500DCE95F /* MPCHandler.h */,
+				A0E0AEE71CAC479500DCE95F /* MPCHandler.m */,
 				A0E0AECA1CAC424800DCE95F /* Main.storyboard */,
 				A0E0AECD1CAC424800DCE95F /* Assets.xcassets */,
 				A0E0AECF1CAC424800DCE95F /* LaunchScreen.storyboard */,
@@ -160,6 +167,7 @@
 				TargetAttributes = {
 					A0E0AEBD1CAC424800DCE95F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9W5FFKY42D;
 					};
 					A0E0AED61CAC424800DCE95F = {
 						CreatedOnToolsVersion = 7.2;
@@ -212,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E0AEC91CAC424800DCE95F /* ViewController.m in Sources */,
+				A0E0AEE81CAC479500DCE95F /* MPCHandler.m in Sources */,
 				A0E0AEC61CAC424800DCE95F /* AppDelegate.m in Sources */,
 				A0E0AEC31CAC424800DCE95F /* main.m in Sources */,
 			);
@@ -221,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E0AEEA1CAC55FC00DCE95F /* ViewController.m in Sources */,
 				A0E0AEDC1CAC424800DCE95F /* MultiPeerDemoTests.m in Sources */,
+				A0E0AEE91CAC479500DCE95F /* MPCHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MultiPeerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sravan.MultiPeerDemo;
@@ -350,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MultiPeerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sravan.MultiPeerDemo;
